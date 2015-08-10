@@ -40,4 +40,12 @@ public class TestSalesBooks {
         baskets.add(Books.HARRY_POTTER_2);
         assertEquals(15.20D, baskets.calculate(),0);
     }
+    
+    @Test
+    public void calculateThreeDifferentBookInBaskets(){
+        baskets.add(Books.HARRY_POTTER_1);
+        baskets.add(Books.HARRY_POTTER_2);
+        baskets.add(Books.HARRY_POTTER_3);
+        assertEquals(21.60D, baskets.calculate(),0);
+    }
 }
