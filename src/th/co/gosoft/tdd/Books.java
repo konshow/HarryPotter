@@ -6,5 +6,6 @@ public class Books {
     public static final int HARRY_POTTER_2 = 2;
     public static final int HARRY_POTTER_3 = 3;
     public static final int HARRY_POTTER_4 = 4;
+    public static final int HARRY_POTTER_5 = 5;
 
 }
