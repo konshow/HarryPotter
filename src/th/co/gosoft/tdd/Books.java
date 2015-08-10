@@ -12,6 +12,11 @@ public class Books {
     private int numberOfBook = 0;
     private double price = 8.00D;
 
+    public Books(String bookName, double price){
+        this.bookName = bookName;
+        this.price = price;
+    }
+
     public Books(String bookName, double price, int numberOfBook){
         this.bookName = bookName;
         this.price = price;
