@@ -12,8 +12,9 @@ public class Books {
     private int numberOfBook = 0;
     private double price = 8.00D;
 
-    public Books(String bookName, int numberOfBook){
+    public Books(String bookName, double price, int numberOfBook){
         this.bookName = bookName;
+        this.price = price;
         this.numberOfBook = numberOfBook;
     }
 
@@ -31,9 +32,5 @@ public class Books {
 
     public double getPrice() {
         return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 }
