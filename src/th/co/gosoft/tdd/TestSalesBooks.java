@@ -69,6 +69,18 @@ public class TestSalesBooks {
     }
     
     @Test
+    public void calculateFiveDifferentBookandTwoDifferentBookInBaskets(){
+        baskets.add(Books.HARRY_POTTER_1);
+        baskets.add(Books.HARRY_POTTER_2);
+        baskets.add(Books.HARRY_POTTER_3);
+        baskets.add(Books.HARRY_POTTER_4);
+        baskets.add(Books.HARRY_POTTER_5);
+        baskets.add(Books.HARRY_POTTER_1);
+        baskets.add(Books.HARRY_POTTER_2);
+        assertEquals(45.20D, baskets.calculate(),0);
+    }
+    
+    @Test
     public void calculateFiveDifferentBookandThreeDifferentBookInBaskets(){
         baskets.add(Books.HARRY_POTTER_1);
         baskets.add(Books.HARRY_POTTER_2);
@@ -78,6 +90,6 @@ public class TestSalesBooks {
         baskets.add(Books.HARRY_POTTER_1);
         baskets.add(Books.HARRY_POTTER_2);
         baskets.add(Books.HARRY_POTTER_3);
-        assertEquals(51.60D, baskets.calculate(),0);
+        assertEquals(51.20D, baskets.calculate(),0);
     }
 }

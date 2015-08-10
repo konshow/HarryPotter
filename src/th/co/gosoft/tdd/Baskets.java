@@ -6,7 +6,8 @@ public class Baskets {
     private int books[] = new int[6];
 
     public double calculate() {
-        return calculator.calculate(books);
+        calculator.setBooks(books);
+        return calculator.calculate();
     }
 
     public void add(int book) {
