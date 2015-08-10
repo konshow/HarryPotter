@@ -30,4 +30,11 @@ public class TestBasket {
         baskets.add(new Books(Books.HARRY_POTTER_1,pricePerBook), oneBook);
         assertEquals(expectedTotalPrice, baskets.totalPrices(), 0);
     }
+    
+    @Test
+    public void addTwoBooksShouldBeCalculate8EUR() {
+        expectedTotalPrice = 16.00D;
+        baskets.add(new Books(Books.HARRY_POTTER_1,pricePerBook), twoBook);
+        assertEquals(expectedTotalPrice, baskets.totalPrices(), 0);
+    }
 }
