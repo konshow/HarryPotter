@@ -11,4 +11,11 @@ public class TestSalesBooks {
         Baskets baskets = new Baskets();
         assertEquals(0.00D, baskets.calculate(),0);
     }
+    
+    @Test
+    public void calculateOneBookInBaskets(){
+        Baskets baskets = new Baskets();
+        baskets.add(Books.HARRY_POTTER_1);
+        assertEquals(8.00D, baskets.calculate(),0);
+    }
 }
