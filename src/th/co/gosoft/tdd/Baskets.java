@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Baskets {
 
     private Calculator calculator = new Calculator();
-    private ArrayList<Books> books = new ArrayList<>();
+    private ArrayList<Books> books = new ArrayList<Books>();
 
     public double calculate() {
         calculator.setBooks(books);
