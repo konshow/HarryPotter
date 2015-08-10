@@ -104,4 +104,15 @@ public class TestSalesBooks {
         baskets.add(new Books(Books.HARRY_POTTER_5, pricePerBook, oneBook));
         assertEquals(expectedTotalPrice, baskets.calculate(), 0);
     }
+
+    @Test
+    public void calculateBestPriceFiveDifferentBookandThreeDifferentBookInBaskets() {
+        expectedTotalPrice = 51.20D;
+        baskets.add(new Books(Books.HARRY_POTTER_1, pricePerBook, twoBook));
+        baskets.add(new Books(Books.HARRY_POTTER_2, pricePerBook, twoBook));
+        baskets.add(new Books(Books.HARRY_POTTER_3, pricePerBook, twoBook));
+        baskets.add(new Books(Books.HARRY_POTTER_4, pricePerBook, oneBook));
+        baskets.add(new Books(Books.HARRY_POTTER_5, pricePerBook, oneBook));
+        assertEquals(expectedTotalPrice, baskets.calculateBestPrice(), 0);
+    }
 }
