@@ -9,6 +9,8 @@ public class Baskets {
     public double calculate() {
         if(booksList.size() == 1)
             return 8.00D;
+        else if(booksList.size() == 2)
+            return 16.00D;
         return 0.00D;
     }
 

@@ -18,4 +18,12 @@ public class TestSalesBooks {
         baskets.add(Books.HARRY_POTTER_1);
         assertEquals(8.00D, baskets.calculate(),0);
     }
+    
+    @Test
+    public void calculateTwoBookInBaskets(){
+        Baskets baskets = new Baskets();
+        baskets.add(Books.HARRY_POTTER_1);
+        baskets.add(Books.HARRY_POTTER_1);
+        assertEquals(16.00D, baskets.calculate(),0);
+    }
 }
