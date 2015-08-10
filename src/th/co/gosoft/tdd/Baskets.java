@@ -5,13 +5,10 @@ import java.util.ArrayList;
 public class Baskets {
 
     private ArrayList<Integer> booksList = new ArrayList<>();
+    private double pricePerBook = 8.00D;
     
     public double calculate() {
-        if(booksList.size() == 1)
-            return 8.00D;
-        else if(booksList.size() == 2)
-            return 16.00D;
-        return 0.00D;
+        return pricePerBook * booksList.size();
     }
 
     public void add(int book) {
