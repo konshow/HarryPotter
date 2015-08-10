@@ -1,8 +1,11 @@
-package th.co.gosoft.tdd;
+package test.th.co.gosoft.tdd;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import th.co.gosoft.tdd.Baskets;
+import th.co.gosoft.tdd.Books;
 
 public class TestSalesBooks {
 
